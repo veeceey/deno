@@ -1,0 +1,12 @@
+{
+  "A fun cron 123 - _": { schedule: "* * * * *" },
+  "Fail cron": { schedule: "*/5 * * * *", backoffSchedule: [ 100 ] }
+}
+404
+test-cron executed
+204
+Exception in cron handler Fail cron Error: an error
+    at file:///[WILDCARD]/child.ts:[WILDCARD]
+    at executeCron (ext:deno_cron/01_cron.ts:[WILDCARD])
+    at eventLoopTick (ext:core/01_core.js:[WILDCARD])
+204
